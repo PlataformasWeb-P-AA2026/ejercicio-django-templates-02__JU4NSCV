@@ -30,7 +30,7 @@
       <ul>
         {% for t in e.numeros_telefonicos.all %}
           <li>
-            <span>{{t.telefono}} - <span>{{t.tipo}}</span> - <a href="{% url 'editar_numero_telefonico' t.id %}" title="editar"><i class="fa fa-edit"></i></a> </span>
+            <span>{{t.telefono}} - <span>{{t.tipo}}</span> - <span>${{t.costo_mensual}}</span> - <a href="{% url 'editar_numero_telefonico' t.id %}" title="editar"><i class="fa fa-edit"></i></a> </span>
           </li>
         {% endfor %}
       </ul>

@@ -35,7 +35,7 @@ class NumeroTelefonicoAdmin(admin.ModelAdmin):
     # por cada registro
     # se deja de usar la representación (str) 
     # de la clase 
-    list_display = ('telefono', 'tipo', 'estudiante')
+    list_display = ('telefono', 'tipo', 'costo_mensual', 'estudiante')
     # se agrega el atributo 
     # raw_id_fields que permite acceder a una interfaz 
     # para buscar los estudiantes y seleccionar el que 

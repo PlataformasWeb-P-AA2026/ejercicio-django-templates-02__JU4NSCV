@@ -29,6 +29,7 @@ class Estudiante(models.Model):
 class NumeroTelefonico(models.Model):
     telefono = models.CharField(max_length=100)
     tipo = models.CharField(max_length=100)
+    costo_mensual = models.DecimalField(max_digits=10, decimal_places=2, default=0)
     estudiante = models.ForeignKey(Estudiante, on_delete=models.CASCADE,
             related_name="numeros_telefonicos")
 
